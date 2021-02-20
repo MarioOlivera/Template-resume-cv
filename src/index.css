@@ -1,6 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+html {
+  font-family: sans-serif !important;
+  line-height: 1.15 !important;
+  -webkit-text-size-adjust: 100% !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
 body {
-  padding-top: 3.375rem;
-  color: #6c757d;
+  margin: 0 !important;
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  text-align: left !important;
+  background-color: #fff !important;
+  padding-top: 3.375rem !;
+  color: #6c757d !important;
 }
 
 @media (min-width: 992px) {
@@ -8,4 +28,78 @@ body {
     padding-top: 0;
     padding-left: 17rem;
   }
+}
+
+section.resume-section {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+}
+
+section.resume-section .resume-section-content {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+}
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem !important;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  color: #343a40 !important;
+  text-transform: uppercase;
+}
+
+h1, .h1 {
+  font-size: 6rem !important;
+}
+
+h2, .h2 {
+  font-size: 3.5rem !important;
+}
+
+h3, .h3 {
+  font-size: 2rem !important;
+}
+
+h4, .h4 {
+  font-size: 1.5rem !important;
+}
+
+h5, .h5 {
+  font-size: 1.25rem !important;
+}
+
+h6, .h6 {
+  font-size: 1rem !important;
+}
+
+.lead {
+  font-size: 1.25rem !important;
+  font-weight: 300 !important;
+}
+
+.subheading {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
 }

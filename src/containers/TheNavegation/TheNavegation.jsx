@@ -9,9 +9,11 @@ const TheNavegation = (props) => {
 
     return (
     <Navbar bg="primary" expand="lg" fixed="top"  id="sideNav">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand>
+            <Link to="/">
             <span className="d-block d-lg-none">Clarence Taylor</span>
             <span className="d-none d-lg-block"><img className="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="" /></span>
+            </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
