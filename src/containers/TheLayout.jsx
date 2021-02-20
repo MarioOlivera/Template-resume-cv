@@ -1,12 +1,15 @@
 import React from 'react'
+import Container from 'react-bootstrap/Container'
 import TheNavegation from './TheNavegation'
 
-const TheLayout = ({children}) => {
+const TheLayout = (props) => {
 
     return (
     <div>
-        <TheNavegation></TheNavegation>
-        {children}
+        <TheNavegation {...props}></TheNavegation>
+        <Container fluid>
+            {props.children}
+        </Container>
     </div>)
 }
 
